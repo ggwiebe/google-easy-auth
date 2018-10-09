@@ -1,9 +1,11 @@
 {
   "name": "google-easy-auth",
   "version": "1.0.0",
+  "private": true,
   "description": "Tutorial using Google Sign-In with Node.js",
-  "main": "index.js",
+  "main-DONOTUSE": "index.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +24,13 @@
   },
   "homepage": "https://github.com/ggwiebe/google-easy-auth#readme",
   "dependencies": {
-    "googleapis": "^34.0.0"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-winston": "^3.0.0",
+    "googleapis": "^34.0.0",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0"
   }
 }
